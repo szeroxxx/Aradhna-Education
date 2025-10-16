@@ -1,15 +1,10 @@
 'use client'
 
 import { Container } from '@/components/ui/Container'
-import { SectionHeader } from '@/components/ui/SectionHeader'
-import { Badge } from '@/components/ui/Badge'
 import {
-  CheckCircle2,
-  Award,
-  Users,
-  TrendingUp,
   ShieldCheck,
   Headphones,
+  Users,
   MapPin,
 } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -37,12 +32,6 @@ const features = [
   },
 ]
 
-const stats = [
-  { icon: Award, label: 'Top 1 in Gujarat', variant: 'success' as const },
-  { icon: Users, label: '25K+ Students', variant: 'default' as const },
-  { icon: TrendingUp, label: '90%+ Success Rate', variant: 'success' as const },
-]
-
 export function WhoWeAre() {
   return (
     <section className="section-padding bg-white/50">
@@ -59,7 +48,7 @@ export function WhoWeAre() {
             About <span className="text-primary">Aradhana Education</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-ink-subtle">
-            Gujarat's trusted career consultancy that helps students from{' '}
+            Gujarat&apos;s trusted career consultancy that helps students from{' '}
             <span className="font-semibold text-primary">form fill-up to certificate</span> for
             Nursing and Pharmacy admissions.
           </p>

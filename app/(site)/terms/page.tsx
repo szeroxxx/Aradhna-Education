@@ -23,7 +23,7 @@ export default function TermsPage() {
             <section className="mt-8">
               <h2 className="font-display text-2xl font-bold text-ink">1. Acceptance of Terms</h2>
               <p className="text-subtle-ink">
-                By accessing and using Aradhana Education's services, you accept and agree to be
+                By accessing and using Aradhana Education&apos;s services, you accept and agree to be
                 bound by these Terms of Service. If you do not agree to these terms, please do not
                 use our services.
               </p>

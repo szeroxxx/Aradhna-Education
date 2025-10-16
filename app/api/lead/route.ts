@@ -25,7 +25,7 @@ function checkRateLimit(ip: string): boolean {
   return true
 }
 
-async function saveLead(data: any) {
+async function saveLead(data: Record<string, unknown>) {
   try {
     const dataDir = path.join(process.cwd(), 'data')
     const filePath = path.join(dataDir, 'leads.json')

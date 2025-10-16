@@ -45,7 +45,7 @@ export const websiteSchema: WithContext<WebSite> = {
     '@type': 'SearchAction',
     target: `${siteUrl}/search?q={search_term_string}`,
     'query-input': 'required name=search_term_string',
-  } as any, // SearchAction type doesn't fully match schema-dts
+  } as unknown as WebSite['potentialAction'], // SearchAction type doesn't fully match schema-dts
 }
 
 export const faqSchema: WithContext<FAQPage> = {

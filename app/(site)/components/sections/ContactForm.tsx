@@ -48,7 +48,7 @@ export function ContactForm() {
         }
         // Vercel Analytics
         if (window.va) {
-          window.va('event', { name: 'lead_submitted' })
+          window.va('event', 'lead_submitted')
         }
       }
 
@@ -240,7 +240,7 @@ City: ${data.city}`
                     animate={{ opacity: 1, y: 0 }}
                     className="rounded-2xl bg-success/10 p-4 text-center text-sm text-success"
                   >
-                    ✓ Form submitted successfully! We've opened WhatsApp for you.
+                    ✓ Form submitted successfully! We&apos;ve opened WhatsApp for you.
                   </motion.div>
                 )}
               </div>

@@ -1,5 +1,5 @@
 import { Container } from '@/components/ui/Container'
-import { WHATSAPP_NUMBER, PHONE_NUMBER } from '@/lib/constants'
+import { PHONE_NUMBER } from '@/lib/constants'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 
 const footerLinks = {

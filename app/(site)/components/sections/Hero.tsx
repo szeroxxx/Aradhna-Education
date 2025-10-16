@@ -6,7 +6,7 @@ import { GradientClouds } from '@/components/ui/GradientClouds'
 import { VideoMock } from '@/components/ui/VideoMock'
 import { AvatarGroup } from '@/components/ui/AvatarGroup'
 import { Pill } from '@/components/ui/Pill'
-import { MessageCircle, Phone, Star } from 'lucide-react'
+import { MessageCircle, Star } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { WHATSAPP_NUMBER } from '@/lib/constants'
 
@@ -107,7 +107,7 @@ export function Hero() {
                 </div>
               </div>
               <p className="text-sm text-ink">
-                "Got admission in my dream college with full support!"
+                &quot;Got admission in my dream college with full support!&quot;
               </p>
               <p className="mt-1 text-xs text-ink-subtle">— Priya S., B.Sc Nursing</p>
             </motion.div>
