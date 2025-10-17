@@ -78,7 +78,7 @@ City: ${data.city}`
   }
 
   return (
-    <section className="section-padding bg-white/50">
+    <section id="apply" className="section-padding bg-white/50">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -91,8 +91,15 @@ City: ${data.city}`
             title="Apply for Admission 2025-26"
             subtitle="Fill in your details and we'll connect with you on WhatsApp"
             centered
-            className="mb-12"
+            className="mb-8"
           />
+
+          <div className="mx-auto mb-6 max-w-2xl text-center">
+            <p className="text-sm text-ink-subtle">
+              <span className="font-semibold text-primary">We respond within 24 hours</span> — your
+              information is safe and secure.
+            </p>
+          </div>
 
           <div className="mx-auto max-w-2xl">
             <form

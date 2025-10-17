@@ -63,6 +63,15 @@ const config: Config = {
           '2xl': '1200px',
         },
       },
+      keyframes: {
+        'slide-in-from-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'slide-in-from-right': 'slide-in-from-right 0.3s ease-out',
+      },
     },
   },
   plugins: [

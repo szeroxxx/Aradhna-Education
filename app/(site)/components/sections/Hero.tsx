@@ -26,7 +26,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-[90vh] section-padding overflow-hidden">
+    <section id="hero" className="relative min-h-[90vh] section-padding overflow-hidden">
       <GradientClouds />
       <Container className="relative z-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -47,8 +47,8 @@ export function Hero() {
             </h1>
 
             <p className="mb-8 text-lg text-ink-subtle lg:text-xl">
-              Get admitted to verified government & private colleges with end-to-end support from
-              documentation to placement.
+              We help students across Gujarat get into verified nursing and pharmacy colleges with
+              end-to-end guidance—from form fill-up to final certificate.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 lg:justify-start mb-8">
@@ -56,7 +56,22 @@ export function Hero() {
                 <MessageCircle className="h-5 w-5" />
                 Apply on WhatsApp
               </Button>
-              <Button variant="secondary" size="lg">
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={() => {
+                  const coursesSection = document.getElementById('courses')
+                  if (coursesSection) {
+                    const headerHeight = 80
+                    const elementPosition = coursesSection.getBoundingClientRect().top + window.scrollY
+                    const offsetPosition = elementPosition - headerHeight
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
                 Explore Courses
               </Button>
             </div>
@@ -68,11 +83,12 @@ export function Hero() {
                 <div className="text-sm text-ink-subtle">Students Guided</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="flex items-center gap-1 text-3xl font-bold text-primary">
-                  <Star className="h-6 w-6 fill-primary" />
-                  Top 1
-                </div>
-                <div className="text-sm text-ink-subtle">Trusted in Gujarat</div>
+                <div className="text-3xl font-bold text-primary">90%</div>
+                <div className="text-sm text-ink-subtle">Success Rate</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-sm text-ink-subtle">Partner Colleges</div>
               </div>
             </div>
           </motion.div>

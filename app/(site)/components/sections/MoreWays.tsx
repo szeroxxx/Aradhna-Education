@@ -39,7 +39,7 @@ const features = [
 
 export function MoreWays() {
   return (
-    <section className="section-padding">
+    <section id="services" className="section-padding">
       <Container>
         <SectionHeader
           eyebrow="Services"

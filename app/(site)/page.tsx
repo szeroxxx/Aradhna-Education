@@ -7,7 +7,7 @@ import { SocialProof } from './components/sections/SocialProof'
 import { FAQ } from './components/sections/FAQ'
 import { CTA } from './components/sections/CTA'
 import { ContactForm } from './components/sections/ContactForm'
-import { organizationSchema, websiteSchema, faqSchema } from '@/lib/structured-data'
+import { organizationSchema, websiteSchema, faqSchema, localBusinessSchema } from '@/lib/structured-data'
 
 export default function HomePage() {
   return (
@@ -24,6 +24,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       <main id="main-content">

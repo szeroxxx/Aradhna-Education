@@ -34,7 +34,7 @@ const features = [
 
 export function WhoWeAre() {
   return (
-    <section className="section-padding bg-white/50">
+    <section id="about" className="section-padding bg-white/50">
       <Container>
         {/* Header */}
         <motion.div
@@ -48,21 +48,10 @@ export function WhoWeAre() {
             About <span className="text-primary">Aradhana Education</span>
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-ink-subtle">
-            Gujarat&apos;s trusted career consultancy that helps students from{' '}
-            <span className="font-semibold text-primary">form fill-up to certificate</span> for
-            Nursing and Pharmacy admissions.
+            We help students across Gujarat get into verified nursing and pharmacy colleges with
+            end-to-end guidance—from{' '}
+            <span className="font-semibold text-primary">form fill-up to final certificate</span>.
           </p>
-        </motion.div>
-
-        {/* Tagline Banner */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-12 rounded-2xl bg-gradient-to-r from-primary to-primary/80 p-8 text-center shadow-lg"
-        >
-          <h3 className="text-3xl font-bold text-white md:text-4xl">Learn. Grow. Succeed.</h3>
         </motion.div>
 
         {/* Features Grid */}
@@ -85,17 +74,42 @@ export function WhoWeAre() {
           ))}
         </div>
 
-        {/* Location Card */}
+        {/* Location Card with Map */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="glass-panel mx-auto max-w-2xl rounded-2xl p-8 text-center"
+          className="glass-panel mx-auto max-w-4xl rounded-2xl p-8"
         >
-          <h4 className="mb-3 text-xl font-bold text-ink">Located in Rajkot</h4>
-          <p className="mb-1 font-medium text-ink-subtle">Shrimad Bhavan, FF-102, Second Floor</p>
-          <p className="text-ink-subtle">Opp. Shri Kanya Shri Vikas Gruh, Dhebar Road, Rajkot</p>
+          <h4 className="mb-4 text-center text-xl font-bold text-ink">Visit Our Office</h4>
+          <div className="mb-4 text-center">
+            <p className="mb-1 font-medium text-ink-subtle">Shrimad Bhavan, FF-102, Second Floor</p>
+            <p className="mb-3 text-ink-subtle">Opp. Shri Kanya Shri Vikas Gruh, Dhebar Road, Rajkot</p>
+            <a
+              href="https://maps.google.com/?q=Shrimad+Bhavan+Dhebar+Road+Rajkot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+            >
+              <MapPin className="h-4 w-4" />
+              Get Directions
+            </a>
+          </div>
+          
+          {/* Google Maps Embed */}
+          <div className="hidden overflow-hidden rounded-xl md:block">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5234567890123!2d70.78088!3d22.30389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64e0042!2sDhebar%20Road%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1729180000000!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Aradhana Education Office Location - Dhebar Road, Rajkot"
+            />
+          </div>
         </motion.div>
       </Container>
     </section>

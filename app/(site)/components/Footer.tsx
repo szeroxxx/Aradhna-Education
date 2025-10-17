@@ -1,6 +1,6 @@
 import { Container } from '@/components/ui/Container'
-import { PHONE_NUMBER } from '@/lib/constants'
-import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from '@/lib/constants'
+import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
 
 const footerLinks = {
   company: [
@@ -36,23 +36,45 @@ export function Footer() {
               </p>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-2">
-                  <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
-                  <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`} className="hover:text-primary">
+                  <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <a
+                    href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`}
+                    className="hover:text-primary transition-colors"
+                    aria-label="Call us"
+                  >
                     {PHONE_NUMBER}
                   </a>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
-                  <a href="mailto:info@aradhana.com" className="hover:text-primary">
+                  <MessageCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <a
+                    href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                    aria-label="WhatsApp us"
+                  >
+                    WhatsApp: {PHONE_NUMBER}
+                  </a>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <a
+                    href="mailto:info@aradhana.com"
+                    className="hover:text-primary transition-colors"
+                    aria-label="Email us"
+                  >
                     info@aradhana.com
                   </a>
                 </div>
                 <div className="flex items-start gap-2">
-                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
-                  <span className="text-white/70">Rajkot, Gujarat, India</span>
+                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <span className="text-white/70">
+                    Shrimad Bhavan, Dhebar Road, Rajkot
+                  </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                  <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
                   <span className="text-white/70">Mon-Sat: 9:00 AM - 7:00 PM</span>
                 </div>
               </div>

@@ -2,10 +2,10 @@ import { Container } from '@/components/ui/Container'
 import { Stat } from '@/components/ui/Stat'
 
 const stats = [
-  { number: '10K+', label: 'Students Guided' },
-  { number: '500+', label: 'Expert Mentors' },
-  { number: '95%', label: 'Success Rate' },
+  { number: '25K+', label: 'Students Guided' },
+  { number: '90%', label: 'Success Rate' },
   { number: '50+', label: 'Partner Colleges' },
+  { number: '100%', label: 'Verified Institutions' },
 ]
 
 export function Stats() {

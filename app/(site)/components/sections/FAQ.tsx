@@ -9,7 +9,17 @@ const faqs = [
   {
     question: 'What courses do you provide admission support for?',
     answer:
-      'We provide comprehensive admission support for Nursing courses (GNM, B.Sc Nursing, M.Sc Nursing, ANM) and Pharmacy courses (D.Pharma, B.Pharma, M.Pharma) in government and private colleges across Gujarat.',
+      'We provide comprehensive admission support for Nursing courses (GNM, B.Sc Nursing, Post Basic B.Sc, M.Sc Nursing) and Pharmacy courses (D.Pharm, B.Pharm) in government and private colleges across Gujarat. See our Courses section for the full list of programs.',
+  },
+  {
+    question: 'Is Aradhana Education a registered consultancy?',
+    answer:
+      'Yes, we operate transparently with verified partners and official documentation. We work only with government-approved and recognized institutions, ensuring complete transparency in the admission process.',
+  },
+  {
+    question: 'Which documents are needed for application?',
+    answer:
+      'You will need 10th & 12th marksheets, transfer certificate, ID proof (Aadhar card), passport-size photographs, and caste certificate (if applicable). Specific requirements vary by program—we provide a detailed checklist based on your chosen course.',
   },
   {
     question: 'How much do your services cost?',
@@ -20,11 +30,6 @@ const faqs = [
     question: 'Do you guarantee admission?',
     answer:
       'While we cannot guarantee admission as it depends on eligibility criteria and seat availability, we have a 90%+ success rate. We guide you through the entire process and help you apply to multiple colleges to maximize your chances.',
-  },
-  {
-    question: 'What documents are required for admission?',
-    answer:
-      'Typically, you need 10th & 12th mark sheets, transfer certificate, migration certificate, caste certificate (if applicable), Aadhar card, passport-size photos, and entrance exam scorecard (if applicable). We provide a complete checklist based on your chosen course.',
   },
   {
     question: 'Can you help with scholarships and financial aid?',
@@ -50,7 +55,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="section-padding">
+    <section id="faq" className="section-padding">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
