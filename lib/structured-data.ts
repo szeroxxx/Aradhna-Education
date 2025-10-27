@@ -91,18 +91,10 @@ export const faqSchema: WithContext<FAQPage> = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What courses do you provide admission support for?',
+      name: 'What courses do you offer admission support for?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We provide comprehensive admission support for Nursing courses (GNM, B.Sc Nursing, Post Basic B.Sc, M.Sc Nursing) and Pharmacy courses (D.Pharm, B.Pharm) in government and private colleges across Gujarat.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Aradhana Education a registered consultancy?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, we operate transparently with verified partners and official documentation. We work only with government-approved and recognized institutions, ensuring complete transparency in the admission process.',
+        text: 'We provide complete admission assistance for Nursing programs (GNM, B.Sc Nursing, Post Basic B.Sc, and M.Sc Nursing) and Pharmacy programs (D.Pharm and B.Pharm) in both government and private colleges across Gujarat. For a detailed list, please visit our Courses section.',
       },
     },
     {
@@ -126,7 +118,7 @@ export const faqSchema: WithContext<FAQPage> = {
       name: 'Do you guarantee admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'While we cannot guarantee admission as it depends on eligibility criteria and seat availability, we have a 90%+ success rate. We guide you through the entire process and help you apply to multiple colleges to maximize your chances.',
+        text: 'While we cannot guarantee admission—since it depends on eligibility, merit, and seat availability—we maintain a success rate of over 90%. Our expert team guides you through every step and helps you apply to multiple colleges to greatly increase your chances of admission.',
       },
     },
     {
@@ -134,7 +126,7 @@ export const faqSchema: WithContext<FAQPage> = {
       name: 'Can you help with scholarships and financial aid?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes! We guide students through various government scholarship schemes like Post Matric Scholarship, National Scholarship Portal, and college-specific financial aid programs. We help with application forms and documentation.',
+        text: 'Yes. We assist students in applying for various government scholarship schemes—such as the Post Matric Scholarship and those available through the National Scholarship Portal—as well as college-specific financial aid programs. Our team provides guidance with eligibility, documentation, and application procedures.',
       },
     },
     {
@@ -142,7 +134,7 @@ export const faqSchema: WithContext<FAQPage> = {
       name: 'How long does the admission process take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The timeline varies by college and course. Typically, the process takes 2-4 weeks from application to admission confirmation. We keep you updated at every step and ensure timely completion of all formalities.',
+        text: 'The admission timeline varies by college and course. On average, it takes about 2–4 weeks from the time of application to final confirmation. Our team keeps you informed at every stage and ensures all procedures are completed on time.',
       },
     },
     {
@@ -150,15 +142,15 @@ export const faqSchema: WithContext<FAQPage> = {
       name: 'Do you provide support after admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Absolutely! We continue to support you with hostel arrangements, course guidance, internship opportunities, and placement assistance. Our relationship with students extends beyond just admission.',
+        text: "Absolutely. Our support doesn't end once you're admitted. We assist with hostel arrangements, course guidance, internship opportunities, and placement support—ensuring you have a smooth and successful academic journey.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Which cities in Gujarat do you cover?',
+      name: 'Why should I choose Aradhana for admission guidance?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We cover all major cities including Ahmedabad, Surat, Vadodara, Rajkot, Bhavnagar, Jamnagar, Gandhinagar, and Anand. We work with colleges across Gujarat to provide you with the best options.',
+        text: "We provide end-to-end admission guidance that's personalized to your goals and interests. Our expert counselors offer transparent advice, help you select the right course and college, and handle all documentation with care. Backed by years of experience and strong partnerships with reputed institutions across Gujarat, we ensure a smooth, stress-free admission experience.",
       },
     },
   ],
