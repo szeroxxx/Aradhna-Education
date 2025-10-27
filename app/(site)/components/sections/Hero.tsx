@@ -37,7 +37,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center text-center lg:items-start lg:text-left"
           >
-            <Pill className="mb-4 bg-emerald-500 px-6 py-2 text-base font-semibold text-white">
+            <Pill className="mb-4 w-full bg-primary px-6 py-2 text-base font-semibold text-white lg:w-auto">
               🎓 Admission open till 31st November
             </Pill>
 
@@ -55,7 +55,7 @@ export function Hero() {
                   })
                 }
               }}
-              className="mb-8 h-auto bg-emerald-600 px-8 py-4 text-lg hover:bg-emerald-700"
+              className="mb-8 h-auto w-full bg-primary px-8 py-4 text-lg hover:bg-primary-600 lg:w-auto"
             >
               Register Now
             </Button>
