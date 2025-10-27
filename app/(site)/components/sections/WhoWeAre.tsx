@@ -13,7 +13,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: '100% Verified Colleges',
-    description: 'Only government and recognized private colleges',
+    description: 'INC & KNC approved colleges',
   },
   {
     icon: Headphones,

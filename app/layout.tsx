@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: `%s | ${process.env.NEXT_PUBLIC_SITE_NAME || 'Aradhana'}`,
   },
   description:
-    'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. Verified colleges, end-to-end support, 25K+ students guided.',
+    'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. INC & KNC approved colleges, end-to-end support, 1K+ students guided. Admission open till 31st November.',
   keywords: [
     'nursing admission Gujarat',
     'pharmacy admission Gujarat',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: process.env.NEXT_PUBLIC_SITE_NAME || 'Aradhana',
     title: 'Nursing & Pharmacy Admission in Gujarat | Aradhana Education',
     description:
-      'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. Verified colleges, end-to-end support, 25K+ students guided.',
+      'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. INC & KNC approved colleges, end-to-end support, 1K+ students guided. Admission open till 31st November.',
     images: [
       {
         url: '/opengraph-image',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nursing & Pharmacy Admission in Gujarat | Aradhana Education',
     description:
-      'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. Verified colleges, end-to-end support, 25K+ students guided.',
+      'Get admission guidance for GNM, B.Sc, P.B.Sc & Pharmacy. INC & KNC approved colleges, end-to-end support, 1K+ students guided. Admission open till 31st November.',
     images: ['/opengraph-image'],
   },
   robots: {

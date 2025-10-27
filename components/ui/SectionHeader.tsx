@@ -21,7 +21,7 @@ export function SectionHeader({
         <p className="text-sm font-medium uppercase tracking-wider text-primary">{eyebrow}</p>
       )}
       <h2 className="text-h2 font-bold leading-tight">{title}</h2>
-      {subtitle && <p className="text-lg text-ink-subtle max-w-2xl">{subtitle}</p>}
+      {subtitle && <p className="text-lg text-ink-subtle">{subtitle}</p>}
     </div>
   )
 }

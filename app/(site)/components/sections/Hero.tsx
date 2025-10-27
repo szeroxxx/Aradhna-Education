@@ -26,24 +26,43 @@ export function Hero() {
   }
 
   return (
-    <section id="hero" className="relative min-h-[90vh] section-padding overflow-hidden">
+    <section id="hero" className="section-padding relative min-h-[90vh] overflow-hidden">
       <GradientClouds />
       <Container className="relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
+            className="flex flex-col items-center text-center lg:items-start lg:text-left"
           >
-            <Pill className="mb-6 bg-primary/10 text-primary">
-              🎓 Admissions Open 2025–26
+            <Pill className="mb-4 bg-emerald-500 px-6 py-2 text-base font-semibold text-white">
+              🎓 Admission open till 31st November
             </Pill>
 
-            <h1 className="text-display-xl mb-6 leading-tight">
-              Your gateway to{' '}
-              <span className="font-semibold text-primary">Nursing & Pharmacy</span> in Gujarat
+            <Button
+              size="lg"
+              onClick={() => {
+                const applySection = document.getElementById('apply')
+                if (applySection) {
+                  const headerHeight = 80
+                  const elementPosition = applySection.getBoundingClientRect().top + window.scrollY
+                  const offsetPosition = elementPosition - headerHeight
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth',
+                  })
+                }
+              }}
+              className="mb-8 h-auto bg-emerald-600 px-8 py-4 text-lg hover:bg-emerald-700"
+            >
+              Register Now
+            </Button>
+
+            <h1 className="mb-6 text-display-xl leading-tight">
+              Your gateway to <span className="font-semibold text-primary">Nursing & Pharmacy</span>{' '}
+              in Gujarat
             </h1>
 
             <p className="mb-8 text-lg text-ink-subtle lg:text-xl">
@@ -51,7 +70,7 @@ export function Hero() {
               end-to-end guidance—from form fill-up to final certificate.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 lg:justify-start mb-8">
+            <div className="mb-8 flex flex-wrap justify-center gap-4 lg:justify-start">
               <Button size="lg" onClick={handleWhatsAppClick} className="gap-2">
                 <MessageCircle className="h-5 w-5" />
                 Apply on WhatsApp
@@ -63,7 +82,8 @@ export function Hero() {
                   const coursesSection = document.getElementById('courses')
                   if (coursesSection) {
                     const headerHeight = 80
-                    const elementPosition = coursesSection.getBoundingClientRect().top + window.scrollY
+                    const elementPosition =
+                      coursesSection.getBoundingClientRect().top + window.scrollY
                     const offsetPosition = elementPosition - headerHeight
                     window.scrollTo({
                       top: offsetPosition,
@@ -79,7 +99,7 @@ export function Hero() {
             {/* Hero Stats */}
             <div className="flex flex-wrap justify-center gap-6 lg:justify-start">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-primary">25K+</div>
+                <div className="text-3xl font-bold text-primary">1K+</div>
                 <div className="text-sm text-ink-subtle">Students Guided</div>
               </div>
               <div className="text-center lg:text-left">
@@ -112,7 +132,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="glass-panel absolute -bottom-6 -left-6 max-w-xs rounded-2xl p-4 shadow-soft hidden lg:block"
+              className="glass-panel absolute -bottom-6 -left-6 hidden max-w-xs rounded-2xl p-4 shadow-soft lg:block"
             >
               <div className="mb-3 flex items-center gap-3">
                 <AvatarGroup avatars={avatars} max={3} />

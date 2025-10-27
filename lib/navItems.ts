@@ -44,5 +44,5 @@ export const navItems: NavItem[] = [
 
 export const WHATSAPP_CTA = {
   label: 'Apply on WhatsApp',
-  href: 'https://wa.me/919586538671?text=I%20want%20to%20apply',
+  href: 'https://wa.me/919558620892?text=I%20want%20to%20apply',
 }

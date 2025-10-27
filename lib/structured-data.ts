@@ -47,7 +47,7 @@ export const organizationSchema: WithContext<Organization> = {
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
   description:
-    'Trusted by 25K+ students. Leading admission guidance provider for Nursing and Pharmacy courses in Gujarat with 90% success rate and 50+ partner colleges.',
+    'Trusted by 1K+ students. Leading admission guidance provider for Nursing and Pharmacy courses in Gujarat with 90% success rate and 50+ INC & KNC approved colleges. Admission open till 31st November.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Shrimad Bhavan, FF-102, Second Floor, Dhebar Road',
@@ -58,7 +58,7 @@ export const organizationSchema: WithContext<Organization> = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+91-95865-38671',
+    telephone: '+91-95586-20892',
     contactType: 'Customer Service',
     areaServed: 'IN',
     availableLanguage: ['English', 'Hindi', 'Gujarati'],

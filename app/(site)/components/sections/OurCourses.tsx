@@ -81,7 +81,7 @@ export function OurCourses() {
           title="Our Courses"
           subtitle="Comprehensive healthcare education programs designed to build your career"
           centered
-          className="mb-12"
+          className="mb-12  justify-center"
         />
 
         {/* Filter Tabs */}

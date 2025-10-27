@@ -2,7 +2,7 @@ import { Container } from '@/components/ui/Container'
 import { Stat } from '@/components/ui/Stat'
 
 const stats = [
-  { number: '25K+', label: 'Students Guided' },
+  { number: '1K+', label: 'Students Guided' },
   { number: '90%', label: 'Success Rate' },
   { number: '50+', label: 'Partner Colleges' },
   { number: '100%', label: 'Verified Institutions' },
